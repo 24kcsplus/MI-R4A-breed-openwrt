@@ -30,12 +30,12 @@ sed -i "s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.15/g" ta
 # 状态系统增加个性信息
 sed -i "s/exit 0//" package/lean/default-settings/files/zzz-default-settings
 
-echo "sed -i '/CPU usage/a\<tr><td width=\"33%\">关于</td><td><a class=\"author-blog\" href=\"https://myxiaochuang.gitee.io\" target="_blank">作者博客</a>&nbsp;&nbsp;&nbsp;<a class=\"author-blog\" href=\"https://github.com/XXKDB/MI-R4A-breed-openwrt\" target="_blank">编译源地址</a>&nbsp;&nbsp;&nbsp;<a class=\"author-blog\" href=\"https://space.bilibili.com/359789531\" target="_blank">哔哩哔哩</a></td></tr>' /usr/lib/lua/luci/view/admin_status/index.htm" >> package/lean/default-settings/files/zzz-default-settings
+echo "sed -i '/CPU usage/a\<tr><td width=\"33%\">关于</td><td><a class=\"author-blog\" href=\"https://myxiaochuang.gitee.io\" target="_blank">仓库作者博客</a>&nbsp;&nbsp;&nbsp;<a class=\"author-blog\" href=\"https://github.com/XXKDB/MI-R4A-breed-openwrt\" target="_blank">编译源地址</a>&nbsp;&nbsp;&nbsp;<a class=\"author-blog\" href=\"https://space.bilibili.com/359789531\" target="_blank">仓库作者哔哩哔哩</a></td> <br> <td><a class=\"author-blog\" href=\"https://24kblog.top\" target="_blank">编译者博客</a>&nbsp;&nbsp;&nbsp;<a class=\"author-blog\" href=\"https://space.bilibili.com/225319411\" target="_blank">编译者哔哩哔哩</a></td></tr>' /usr/lib/lua/luci/view/admin_status/index.htm" >> package/lean/default-settings/files/zzz-default-settings
 
-echo "echo '<script src=\"https://cdn.jsdelivr.net/gh/XXKDB/img_cdn/js/ginkgo-leaf.js\"></script>' >> /usr/lib/lua/luci/view/footer.htm" >> package/lean/default-settings/files/zzz-default-settings
+echo "echo '<script src=\"https://fastly.jsdelivr.net/gh/XXKDB/img_cdn/js/ginkgo-leaf.js\"></script>' >> /usr/lib/lua/luci/view/footer.htm" >> package/lean/default-settings/files/zzz-default-settings
 
 # 嵌入看板娘
-echo "echo '<script src=\"https://cdn.jsdelivr.net/gh/24kcsplus/live2d-mini/autoload.js\"></script>' >> /usr/lib/lua/luci/view/footer.htm" >> package/lean/default-settings/files/zzz-default-settings
+echo "echo '<script src=\"https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js\"></script>' >> /usr/lib/lua/luci/view/footer.htm" >> package/lean/default-settings/files/zzz-default-settings
 
 echo "" >> package/lean/default-settings/files/zzz-default-settings
 echo "" >> package/lean/default-settings/files/zzz-default-settings
